@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'lato', sans-serif;
+    color:  rgb(56, 40, 40);
+    line-height: 1.6;
+}
+ul{
+    list-style: none;
+    padding-left: 500px;
+}
+a{
+    text-decoration: none;
+    color:  rgb(56, 40, 40);
+}
+hi,
+h2{
+   font-weight: 300;
+   line-height: 1.2;
+   margin: 10px 0; 
+}
+p{
+  margin: 10px 0;  
+}
+img{
+    width: 100%;
+}
+/* Navbar */
+.navbar{
+    background-color: chartreuse; 
+    color: #fff;
+    height: 100px;
+    padding: 0px 50px;
+}
+.navbar ul{
+display: flex;
+}
+.navbar a{
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: 2px #fff solid;
+}
+.navbar.flex{
+    justify-content: space-between;
+}
+/* showcase */
+.showcase{
+    height: 400px;
+    background-color: yellowgreen; 
+    color: #fff;
+    position: relative;
+}
+.showcase h1{
+    font-size: 30px;
+    padding: 0px 0px;
+}
+.showcase p{
+    margin: 20px;
+}
+.showcase .grid{
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+}
+.showcase-form .form-control{
+    margin: 30px 0;
+}
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb; 
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+.showcase-form input:focus{
+    outline: none;
+}
+.showcase::before,
+.showcase::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: whitesmoke;
+  transform: skewY(-3deg);
+}
+/* stats*/
+.stats{
+    padding-top: 100px;
+}
+/*Cli*/
+.cli.grid{
+    grid-template-columns: reapeat(3,1fr);
+    grid-template-rows: reapeat(1);
+}
+.cli.grid> *:first-child{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.contact{
+    text-align: center;
+    height: 150px;
+    padding-left: 50px;
+    padding-top: 30px;
+    margin-top: 100px;
+    color: whitesmoke;
+    background-color: rgb(114, 107, 107)
+}
+.djss{
+    width: 50px;
+    height: 30px;
+    margin-bottom: 50px;
+}
